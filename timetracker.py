@@ -94,7 +94,6 @@ def saveToExcel(csvData):
     for row in csvData:
         # convert duration to string before appending
         ws.append([row[0], row[1], row[2], str(row[3])])
-    #ws.append(['', '', 'Average', calculateAverageDuration(csvData)])
     wb.save('work.xlsx')
 
 def main():
@@ -106,7 +105,7 @@ def main():
         data = json.load(f)
     csvData = gettimeSpentAtWork(data)
     saveToCSV(csvData, 'work.csv')
+
 if __name__ == '__main__':
     main()
-
 
