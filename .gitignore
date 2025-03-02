@@ -1,0 +1,7 @@
+*.csv
+.venv
+.vscode
+__pycache__
+*.xlsx
+*.json
+*.ipynb
